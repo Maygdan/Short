@@ -28,5 +28,5 @@ urlpatterns = [
     path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     
     # Наши эндпоинты
-    path('api/screening/', include('screening/urls')),
+    path('api/screening/', include('screening.urls')),
 ]
