@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>X5 — Регистрация X5ID</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="logo-group">
+            <svg width="67" height="44" viewBox="0 0 67 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M42.0074 43.5927L37.0534 35.5099L32.2051 43.5927H26.3994L33.8579 31.4188L26.2542 20.1157H32.3217L37.1899 27.6626L41.8358 20.1157H47.6416L40.1632 31.7883L47.8463 43.5927H42.0074Z" fill="#05310A"/>
+                <path d="M66.7193 35.6148C66.7193 40.7801 62.8872 44.0002 57.6959 44.0002C53.1183 44.0002 49.1372 41.5192 48.7605 36.1184H53.7124C54.0535 38.4654 55.6114 39.4725 57.6959 39.4725C60.2906 39.4725 61.7674 37.7609 61.7674 35.5478C61.7674 33.3348 60.1186 31.4688 57.6959 31.4688C56.093 31.4688 54.6916 31.9486 53.6398 33.7367H48.9057L50.5409 20.1191H66.1098L65.5902 24.6813H54.4518L54.0095 29.1874C54.0095 29.1874 55.1803 27.8345 58.7238 27.8345C62.9954 27.8345 66.717 30.6505 66.717 35.6148" fill="#05310A"/>
+                <path d="M49.3462 17.1944C46.7097 7.09518 38.3401 0 20.9714 0H0L2.84563 18.9018C4.987 35.9579 11.629 41.4451 23.3857 43.4658C23.4407 43.4745 23.8126 43.5264 23.817 43.0984C23.817 42.945 23.7202 42.811 23.5837 42.7548C15.6389 39.4698 14.7321 28.6962 13.0331 17.8838L11.7192 9.26718H23.6894C34.7264 9.26718 43.2478 9.09645 48.642 17.4624C48.7212 17.5791 48.8467 17.6677 48.9962 17.6677C49.2052 17.6677 49.3593 17.5013 49.3593 17.296C49.3593 17.2593 49.3551 17.2247 49.3439 17.1923" fill="#5FAF2D"/>
+            </svg>
+            <div class="logo-text">КАРЬЕРА<br>В КРУПНОЙ КОМПАНИИ</div>
+        </div>
+        <div class="header-actions">
+            <button class="menu-circle" id="menuBtn">
+                <svg width="16" height="10" viewBox="0 0 16 10" fill="none">
+                    <path d="M1 1L15 1" stroke="#232323" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M1 9L15 9" stroke="#232323" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="auth-box">
+            <h2>Регистрация X5ID</h2>
+            <div class="input-group">
+                <label>Введите номер телефона</label>
+                <input type="text" value="+7" class="auth-input" id="phoneInput" maxlength="12">
+            </div>
+            
+            <button class="btn-gray" id="submitBtn" disabled>Подтвердить вход</button>
+            
+            <button class="btn-gray active-always">Что такое X5ID?</button>
+            
+            <div class="consent">
+                <input type="checkbox" id="check">
+                <label for="check">Я ДАЮ СОГЛАСИЕ НА ОБРАБОТКУ ПЕРСОНАЛЬНЫХ ДАННЫХ</label>
+            </div>
+        </section>
+        
+        <button class="btn help-btn">Помощь X5ID</button>
+    </main>
+
+    <footer class="footer">
+        <p>© 2015-2026 ПАО «КОРПОРАТИВНЫЙ ЦЕНТР ИКС 5»</p>
+    </footer>
+
+    <script src="../assets/js/auth.js"></script>
+</body>
+</html>
