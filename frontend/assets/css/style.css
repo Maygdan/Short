@@ -1,0 +1,183 @@
+/* Обнуление и базовые стили */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif; /* Или стандартный sans-serif */
+}
+
+body {
+    background: #E4F0FF;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 16px;
+}
+
+.menu-circle {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Hero Section */
+.hero {
+    background: #E6FDD9;
+    padding: 40px 20px;
+    border-radius: 24px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.hero h1 {
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 30px;
+    line-height: 1.1;
+}
+
+.btn {
+    background: #05310A;
+    color: white;
+    width: 100%;
+    padding: 16px;
+    border-radius: 35px;
+    border: none;
+    margin-bottom: 12px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.sign {
+    color: #474747;
+    font-size: 10px;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+/* Группировка элементов справа */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Расстояние между кнопкой Log in и меню */
+}
+
+/* Стиль кнопки Log in */
+.btn-login {
+  background-color: rgb(5, 49, 10); /* Цвет 5 49 10 */
+  color: #FFFFFF;                 /* Белый текст */
+  border: none;
+  padding: 8px 18px;
+  border-radius: 20px;            /* Округлые края */
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-login:hover {
+  background-color: rgb(10, 70, 15); /* Немного светлее при наведении */
+}
+
+/* Стилизация выпадающего меню (dropdown) */
+.menu-container {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 50px; /* Отступ под кнопкой */
+  right: 0;
+  width: 280px;
+  background: #05310A;
+  border-radius: 24px;
+  padding: 15px;
+  z-index: 1000;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+/* Светлая область внутри меню */
+.dropdown-list {
+  background: #E6FDD9;
+  border-radius: 20px;
+  padding: 20px;
+  list-style: none;
+}
+
+.dropdown-list a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.dropdown-list li:last-child a {
+  margin-bottom: 0;
+}
+
+.close-small {
+    background: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Белая подложка под пунктами меню */
+.dropdown-content {
+    background: #05310A; /* Фон самого контейнера */
+}
+
+.dropdown-list {
+    background: #E6FDD9;
+    list-style: none;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.dropdown-list li {
+    margin-bottom: 18px;
+}
+
+.dropdown-list li:last-child {
+    margin-bottom: 0;
+}
+
+.dropdown-list a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    font-size: 16px;
+    display: block;
+}
